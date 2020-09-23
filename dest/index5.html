@@ -1,6 +1,4 @@
-// const Blob = require("cross-blob");
-
-const str = `<!doctype html>
+<!doctype html>
 <html>
 <head>
     <title>Example Domain</title>
@@ -46,14 +44,3 @@ const str = `<!doctype html>
 </div>
 </body>
 </html>
-`
-
-// const byteSize = str => new Blob([str]).size;
-const buf = Buffer.byteLength(str)
-const fs = require('fs');
-console.log(buf);
-try{
-fs.realpathSync.native('./dest2');
-} catch(err) {
-  console.log('error: ', err);
-}
